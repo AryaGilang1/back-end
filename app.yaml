@@ -1,0 +1,18 @@
+runtime: nodejs14
+
+env_variables:
+  HOST: 34.101.100.181
+  USER: root
+  PASSWORD: '2505'
+  DATABASE_MAHASISWA: db_mahasiswa
+  DATABASE_KAMPUS: db_kampus
+
+handlers:
+  - url: /data_mahasiswa
+    script: auto
+    secure: always
+    
+
+  - url: /dosen
+    script: auto
+    secure: always
